@@ -1,0 +1,100 @@
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.subtitulo {
+  text-align: center;
+  color: #f3f3f3;
+  /* color: #489688; */
+  /* font-size: 40px; */
+  font-size: 2.5rem;
+  grid-column: 1/-1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0px 30px 0px;
+  position: relative;
+  /* text-transform: uppercase; */
+}
+
+.subtitulo::after,
+.subtitulo::before {
+  content: "";
+  display: block;
+  width: 69px;
+  height: 18px;
+  top: 60px;
+  background-image: url("../../img/CodeSnap.png");
+}
+
+/* ======================================================== */
+/* BOTÃO DE VOLTAR AO TOPO */
+#progress {
+  background: #53ae70;
+  position: fixed;
+  bottom: 20px;
+  right: 22px;
+  width: 60px;
+  height: 60px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 99;
+}
+#progress span {
+  color: #53ae70;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  background: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+#progress-value > .fa-chevron-up {
+  font-size: 20px;
+  color: #751aab;
+}
+#progress-value > .fa-chevron-up:hover {
+  color: aqua;
+}
+
+/* =================================================================== */
+@media (max-width: 768px) {
+  .subtitulo {
+    padding: 10px 20px 10px 20px;
+    font-size: 2.18rem;
+  }
+  #progress {
+    background: #53ae70;
+    position: fixed;
+    bottom: 20px;
+    right: 22px;
+    width: 60px;
+    height: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 99;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitulo {
+    padding: 0px 0px 10px 0px;
+    display: grid;
+  }
+  .subtitulo::after,
+  .subtitulo::before {
+    background-image: none;
+  }
+}

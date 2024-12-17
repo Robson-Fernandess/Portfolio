@@ -1,0 +1,14 @@
+@import "./reset/reset.css";
+
+@import "./globall/global.css";
+
+@import "./header/header-menu.css";
+@import "./introducao/introducao.css";
+@import "./sobre/sobre.css";
+@import "./habilidades/habilidades.css";
+@import "./projetos/projeto.css";
+@import "./certificado/certificado.css";
+@import "./contato/contato.css";
+@import "./footer/footer.css";
+@import "./animacoes/aninacao.css";
+
