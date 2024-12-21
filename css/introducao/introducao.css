@@ -58,11 +58,11 @@
 /* EFEITO MAQUINA DE ESCREVER */
 .intro-info p {
   border-right: 3px solid #53ae70;
-  width: 18ch;
+  width: 21ch;
   white-space: nowrap;
   overflow: hidden;
   /* animar as palavras */
-  animation: typing 2s steps(18), blinkCursor 0.8s infinite step-end alternate;
+  animation: typing 2.5s steps(22), blinkCursor 0.8s infinite step-end alternate;
 }
 
 /* ANIMAÇAO DAS PALAVARAS */
