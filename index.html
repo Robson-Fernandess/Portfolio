@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Robson Fernandes - Desenvolvedor Front-End</title>
+  <meta name="description" content="Desenvolvedor Front-End | Desenvolvedor Freelancer | Criação de sites web atraentes e responsivos | São Paulo, SP">
+  <meta name="author" content="Robson Fernandes">
+  <!-- link font awesone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- Add Favicon -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <!-- botao volta ao top -->
+  <div id="progress">
+    <span id="progress-value"><i class="fa-solid fa-chevron-up"></i></i></span>
+  </div>
+  <!-- MENU DO SITE -->
+  <header class="header-bg">
+    <div class="header container">
+      <div class="logo">
+        <a href="./index.html"></span> R F <span>DEV.</span> </span>
+        </a>
+      </div>
+      <nav class="header-menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <!-- <li><a href="#experiencia">Experiencia</a></li> -->
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#certificados">Certificados</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> <!-- FIM DO MENU -->
+  <!-- MENU LATERAL DEIXAR O MENU ATIVO-->
+  <section class="navigation">
+    <nav>
+      <ul>
+        <a href="#inicio" class="fa-solid fa-house actived js-link"></a>
+        <a href="#sobre" class="fa-solid fa-book js-link"></a>
+        <a href="#habilidades" class="fa-solid fa-house-laptop js-link"></a>
+        <a href="#projetos" class="fa-solid fa-laptop js-link"></a>
+        <a href="#certificados" class="fa-solid fa-graduation-cap js-link"></a>
+        <a href="#contato" class="fa-solid fa-address-book js-link"></a>
+      </ul>
+    </nav>
+
+  </section> <!-- FIM DO MENU ATIVO-->
+
+  <!-- SEÇÃO INTRODUCAO -->
+  <section class="introducao-bg section" id="inicio" aria-label="introducao">
+    <div id="particles-js"></div>
+
+    <div class="introducao container">
+      <div class="intro-info">
+        <h1>Robson Fernandes</h1>
+        <p class=" typing-animation">Desenvolvedor Front-End</p>
+        <ul class="redes-sociais">
+          <li><a href="https://www.linkedin.com/in/robson-fernandess/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a></li>
+          <li><a href="https://github.com/Robson-Fernandess" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a></li>
+          <li><a href="mailto:contato.robson.dev@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope"></i>
+            </a></li>
+        </ul>
+
+      </div>
+      <!-- <div class="foto-intro">
+        <img src="./img/Rectangle 26.png" alt="Foto Perfil">
+      </div> -->
+
+    </div>
+
+  </section> <!-- FIM SEÇÃO INTRODUCAO -->
+
+  <!-- SEÇÃO SOBRE -->
+  <section class="sobre-bg section" id="sobre" aria-label="Sobre">
+    <div class="sobre-conteudo container hidden">
+      <h2 class="subtitulo">Sobre Mim</h2>
+      <div>
+        <p>Meu nome é <span>Robson Fernandes</span> e sou apaixonado por tecnologia, o que me levou a seguir a carreira de programador. Acredito no poder da tecnologia para transformar ideias simples em ferramentas incríveis.</p>
+        <p>Sou formado em <span> Análise e Desenvolvimento de Sistemas </span> e, nas horas vagas, estudo de forma incansável para ampliar meu conhecimento, sempre alinhado aos padrões de mercado.</p>
+        <!-- <p>Atualmente, estou em busca de uma oportunidade na área para aperfeiçoar minhas habilidades e adquirir experiência no campo.</p> -->
+        <p> Se você está buscando um parceiro para levar seu negócio online ao próximo nível, vamos conversar!</p>
+
+        <!-- <div class="Soft-skills">
+          <h2>Soft skills</h2>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"> </i> trabalho em equipe
+            </li>
+            <li>
+              <i class="fa-solid fa-check"> </i> Proatividae
+            </li>
+            <li>
+              <i class="fa-solid fa-check"> </i> Organização
+            </li>
+            <li>
+              <i class="fa-solid fa-check"> </i> Resolução de Problemas
+            </li>
+          </ul>
+        </div> -->
+
+      </div>
+      <div class="sobre-img">
+        <img src="./img/sobre.png" alt="Foto Perfil">
+      </div>
+    </div>
+  </section> <!-- FIM SEÇÃO SOBRE -->
+
+  <!-- SEÇÃO HABILIDADES -->
+  <section class="habilidades-bg section" id="habilidades" aria-label="Habilidades">
+    <div class="habilidades container hidden">
+      <h2 class="subtitulo">Habilidades</h2>
+      <div class="habilidades-conteudo">
+        <h3>HTML, CSS e JavaScript</h3>
+        <p> <span>HTML,</span> <span>CSS</span> <span>e Javascript,</span> também conhecidas como santíssima trindade da web, formam o principal conjunto de tecnologias para qualquer aplicação web. Já deu para ver que é de suma importância entender MUITO bem esses caras.</p>
+      </div>
+      <ul class="habilidades-logo">
+        <li>
+          <i class="fa-brands fa-html5"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-css3-alt"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-js"></i>
+        </li>
+      </ul>
+
+      <div class="habilidades-conteudo">
+        <h3>Bootstrap</h3>
+        <p><span>Bootstrap</span> é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.</p>
+      </div>
+      <ul class="habilidades-logo">
+        <li>
+          <i class="fa-brands fa-bootstrap"></i>
+        </li>
+      </ul>
+
+      <div class="habilidades-conteudo">
+        <h3>Tailwind CSS</h3>
+        <p><span>Tailwind CSS</span> O Tailwind CSS é um framework CSS de código aberto que se destaca por sua abordagem única de design utilitário. Ele fornece uma série de classes utilitárias que podem ser diretamente aplicadas aos elementos HTML para estilizá-los, proporcionando uma abordagem única para a criação de designs personalizados e responsivos.</p>
+      </div>
+      <ul class="habilidades-logo">
+        <li>
+          <img src="./img/Habilidades/tailwind.svg" alt="">
+        </li>
+      </ul>
+
+    </div>
+  </section> <!-- FIM  SEÇÃO HABILIDADES -->
+
+  <!--INICIO SEÇÃO PROJETO -->
+  <section class="projeto-bg section" id="projetos" aria-label="Projeto">
+    <div class="projetos ">
+      <h2 class="subtitulo">Projetos</h2>
+
+      <div class="hidden"> <!-- 1 PROJETO -->
+        <div class="card">
+          <h1 class="projeto-titulo">Projeto Bikcraft</h1>
+          <img src="./img/Projetos/bikcraft.jpg" alt="Bikcraft">
+
+          <div class="info">
+            <h1>Bikcraft</h1>
+            <p>Projeto final do curso Origamid, onde coloquei em prática todos os conteúdos teóricos apresentados no curso, como: <span> UX/UI Design, Adobe XD, Semântica, SEO, Grid, Reset, Responsividade, Animações, Domínio e hospedagem.</span></p>
+            <div class="projetos-stacks">
+              <ul>
+                <li>
+                  <!-- <img src="./img/Habilidades/html-5.png" alt="HTML"> -->
+                  <i class="fab fa-html5"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/css-3.png" alt="CSS" width="25"> -->
+                  <i class="fab fa-css3-alt"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/bootstrap.png" alt="Bootstrap" width="25"> -->
+                  <i class="fab fa-bootstrap"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/script-java.png" alt="JavaScript" width="25"> -->
+                  <i class="fab fa-js"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="projetos-links">
+              <a href="https://bikcraft-2-0.netlify.app/" target="_blank" class="link-project"> Projeto</a>
+              <a href="https://github.com/Robson-Fernandess/Bikcraft2.0" target="_blank" class="link-repository"> Repositório</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden"> <!-- 2 PROJETO -->
+        <div class="card">
+          <h1 class="projeto-titulo">Projeto Caravan</h1>
+          <img src="./img/Projetos/caravan.png" alt="Caravan">
+
+          <div class="info">
+            <h1>Caravan</h1>
+            <p>Projeto desenvolvido durante o curso de Bootstrap Avançado da Origamid. Ao longo do curso colocamos em prática de forma exaustiva os principais métodos do Bootstrap.</p>
+            <div class="projetos-stacks">
+              <ul>
+                <li>
+                  <!-- <img src="./img/Habilidades/html-5.png" alt="HTML"> -->
+                  <i class="fab fa-html5"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/css-3.png" alt="CSS" width="25"> -->
+                  <i class="fab fa-css3-alt"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/bootstrap.png" alt="Bootstrap" width="25"> -->
+                  <i class="fab fa-bootstrap"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/script-java.png" alt="JavaScript" width="25"> -->
+                  <i class="fab fa-js"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="projetos-links">
+              <a href="https://site-caravan.netlify.app/" target="_blank" class="link-project"> Projeto</a>
+              <a href="https://github.com/Robson-Fernandess/caravan-" target="_blank" class="link-repository"> Repositório</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden"> <!-- 3 PROJETO -->
+        <div class="card">
+          <h1 class="projeto-titulo">Projeto Busca CEP</h1>
+          <img src="./img/Projetos/buscacep.png" alt="Busca-Cep">
+          <div class="info">
+            <h1>Busca CEP</h1>
+            <p>Projeto desenvolvido para que as pessoas consigam conhecer o seu destino de forma rápida e pratica. onde deverão inserir apenas o CEP para fazer a busca.</p>
+            <div class="projetos-stacks">
+              <ul>
+                <li>
+                  <!-- <img src="./img/Habilidades/html-5.png" alt="HTML"> -->
+                  <i class="fab fa-html5"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/css-3.png" alt="CSS" width="25"> -->
+                  <i class="fab fa-css3-alt"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/bootstrap.png" alt="Bootstrap" width="25"> -->
+                  <i class="fab fa-bootstrap"></i>
+                </li>
+                <li>
+                  <!-- <img src="./img/Habilidades/script-java.png" alt="JavaScript" width="25"> -->
+                  <i class="fab fa-js"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="projetos-links">
+              <a href="https://sistema-busca-cep.netlify.app/" target="_blank" class="link-project"> Projeto</a>
+              <a href="https://github.com/Robson-Fernandess/Busca-Cep" target="_blank" class="link-repository"> Repositório</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- FIM  CONTAINER -->
+  </section> <!-- FIM  SEÇÃO PROJETO -->
+
+  <!-- SEÇÃO CERTIFICAÇÃO -->
+  <section class="certificados-bg section" id="certificados" aria-label="Certificado">
+    <div class="certificados-conteudo container">
+      <h2 class="subtitulo">Certificados</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <!-- 01 slide -->
+          <div class="swiper-slide"> <!-- 01 - Certificado -->
+            <div class="nome-curso">
+              <h2>Análise e Desenvolvimento de Sistemas</h2>
+            </div>
+            <section class="certificados-descricao">
+              <ul>
+                <li>
+                  <p>Instituição: </p>
+                  <p>Instrutor: </p>
+                  <p>Duração: </p>
+                  <p>Conclusão: </p>
+                  <p>Certificado: </p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p><span>Uniitalo</span> </p>
+                  <p><span>Uniitalo</span> </p>
+                  <p><span> 380 horas </span> </p>
+                  <p><span>2018 </span> </p>
+                  <a href="#" target="_blank">
+                    <button>Clique Aqui </button>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div> <!-- Fim slide -->
+
+          <!-- 02 slide -->
+          <div class="swiper-slide"> <!-- 02 - Certificado -->
+            <div class="nome-curso">
+              <h2>Web Design Completo </h2>
+            </div>
+            <section class="certificados-descricao">
+              <ul>
+                <li>
+                  <p>Instituição: </p>
+                  <p>Instrutor: </p>
+                  <p>Duração: </p>
+                  <p>Conclusão: </p>
+                  <p>Certificado: </p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p><span>Origamid</span> </p>
+                  <p><span>Andre Rafael </span> </p>
+                  <p><span> 44 horas </span> </p>
+                  <p><span>2021 </span> </p>
+                  <a href="https://origamid.com/certificate/c2297040" target="_blank">
+                    <button>Clique Aqui </button>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div> <!-- Fim slide -->
+
+          <!-- 03 slide -->
+          <div class="swiper-slide"> <!-- 03 - Certificado -->
+            <div class="nome-curso">
+              <h2>Bootstrap 4</h2>
+            </div>
+            <section class="certificados-descricao">
+              <ul>
+                <li>
+                  <p>Instituição: </p>
+                  <p>Instrutor: </p>
+                  <p>Duração: </p>
+                  <p>Conclusão: </p>
+                  <p>Certificado: </p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p><span>Origamid</span> </p>
+                  <p><span>Andre Rafael </span> </p>
+                  <p><span> 10 horas </span> </p>
+                  <p><span>2021 </span> </p>
+                  <a href="https://www.origamid.com/certificate/7462025f" target="_blank">
+                    <button>Clique Aqui </button>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div> <!-- Fim slide -->
+          <!-- 04 slide -->
+          <div class="swiper-slide"> <!-- 04 - Certificado -->
+            <div class="nome-curso">
+              <h2>CSS Flexbox</h2>
+            </div>
+            <section class="certificados-descricao">
+              <ul>
+                <li>
+                  <p>Instituição: </p>
+                  <p>Instrutor: </p>
+                  <p>Duração: </p>
+                  <p>Conclusão: </p>
+                  <p>Certificado: </p>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <p><span>Origamid</span> </p>
+                  <p><span>Andre Rafael </span> </p>
+                  <p><span> 6 horas </span> </p>
+                  <p><span>2021 </span> </p>
+                  <a href="https://www.origamid.com/certificate/c2297040" target="_blank">
+                    <button>Clique Aqui </button>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div> <!-- Fim slide -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </section> <!-- FIM  SEÇÃO CERTIFICAÇÃO -->
+
+  <!-- SEÇÃO CONTATO -->
+  <section class="contato-bg section" id="contato" aria-label="Contato">
+    <div class="contato-conteudo container">
+      <h2 class="subtitulo">Contato</h2>
+
+      <!-- contato formulário -->
+      <div class="contato-form">
+        <p>Entre em contato para discutirmos suas necessidades e como podemos alcançar seus objetivos juntos.</p>
+        <form action="https://formsubmit.co/robbsonsp@hotmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://portfoliorobson-front-end.netlify.app/form_susseco.html">
+          <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/form_susseco.html"> -->
+          <input type="hidden" name="_subject" value="RF DEV: Portfólio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+          <!-- <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem. Em breve, entraremos em contato."> -->
+
+          <label for="name">Nome*</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Digite seu nome" required>
+          <label for="email">E-mail*</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required>
+          <label for="message">Mensagem*</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Sua mensagem" rows="5" required></textarea>
+          <button type="submit">Envia sua mensagem</button>
+        </form>
+      </div>
+
+      <div class="contato-descricao">
+        <div class="contato-meios">
+          <h3>Contate-me</h3>
+          <address>
+            <!-- <li><i class="fa-solid fa-envelope"></i><a href="mailto:contato@bikcraft.com">contato.robsonfernandes.dev@gmail.com</a></li> -->
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:contato.robson.dev@gmail.com">contato.robson.dev@gmail.com</a></li>
+            <li> <i class="fa-brands fa-whatsapp"></i> <a href="tel:+5511984656370">+55 11 98465-6370</a></li>
+            <li><i class="fa-solid fa-location-dot"></i>São Paulo, SP.</li>
+          </address>
+        </div>
+
+        <div class="redes-sociais">
+          <h3>Redes sociais</h3>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/robson-fernandess/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a></li>
+            <li><a href="https://github.com/Robson-Fernandess" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a></li>
+            <li><a href="https://www.instagram.com/robson.ffernandes/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section> <!-- FIM SEÇÃO CONTATO -->
+
+  <!-- SEÇÃO FOOTER -->
+  <footer class="footer-bg">
+    <p class="footer-conteudo">
+      © 2024 / Robson Fernandes / Todos os direitos reservados.</p>
+  </footer> <!-- FIM  SEÇÃO FOOTER -->
+
+  <!-- particles.js-->
+  <script src="./js/particles.js"></script>
+  <script src="./js/app.js"></script>
+  <!-- particles.js-->
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+  <!-- swiper js -->
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

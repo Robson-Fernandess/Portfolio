@@ -1,0 +1,108 @@
+/* SEÇÃO HABILIDADES  */
+.habilidades-bg {
+  background: #141414;
+  padding: 20px 20px;
+}
+.habilidades {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-self: center;
+  line-height: 25px;
+  padding: 20px;
+  gap: 20px 0;
+}
+.habilidades-conteudo {
+  border: 1px solid rgba(83, 174, 112, 0.2);
+  padding: 20px;
+}
+.habilidades-conteudo h3 {
+  color: #53ae70;
+  font-size: 1.6rem;
+  /* padding: 10px 0; */
+}
+.habilidades-conteudo span {
+  color: #f3f3f3;
+}
+.habilidades-conteudo p {
+  color: #7a7a7a;
+  padding: 15px 0;
+  font-size: 18px;
+}
+.habilidades-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 25px 0;
+  cursor: pointer;
+  border-top: 1px solid rgba(83, 174, 112, 0.2);
+  border-bottom: 1px solid rgba(83, 174, 112, 0.2);
+  border-right: 1px solid rgba(83, 174, 112, 0.2);
+  border-left: transparent;
+}
+.habilidades-logo .fa-bootstrap {
+  font-size: 140px;
+}
+.habilidades-logo .fa-html5,
+.habilidades-logo .fa-css3-alt,
+.habilidades-logo .fa-js,
+.fa-bootstrap {
+  transition: 0.5s;
+  font-size: 80px;
+}
+.habilidades-logo .fa-html5:hover,
+.habilidades-logo .fa-css3-alt:hover,
+.habilidades-logo .fa-js:hover {
+  transform: translateY(-12%);
+}
+.habilidades-logo .fa-bootstrap:hover {
+  transform: translateY(-5%);
+}
+
+.habilidades-logo li {
+  color: rgba(83, 174, 112, 0.9);
+  transition: all 0.5s;
+  font-size: 80px;
+}
+.habilidades-logo li:nth-child(2) {
+  display: block;
+  padding-top: 60px;
+  color: blue;
+}
+.habilidades-logo img {
+  width: 130px;
+  height: 100px;
+  color: red;
+  background: rgba(83, 174, 112, 0.6);
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.habilidades-logo img:hover {
+  background: #5cb8f0;
+  transform: translateY(-5%);
+}
+
+/* ============================================= */
+@media (max-width: 768px) {
+  .habilidades-bg {
+    /* height: auto; */
+  }
+  .habilidades {
+    grid-template-columns: 1fr;
+  }
+  .habilidades-conteudo h3 {
+    font-size: 1.6rem;
+  }
+  .habilidades-logo {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .habilidades-bg {
+    /* height: auto; */
+  }
+  .habilidades-conteudo p {
+    font-size: 17px;
+  }
+}

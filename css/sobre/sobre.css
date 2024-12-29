@@ -1,0 +1,94 @@
+/* SEÇÃO SOBRE */
+.sobre-bg {
+  background: #000;
+  height: 100vh;
+  padding: 20px 30px;
+  /* padding-top: 8rem; */
+}
+.sobre-conteudo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px 40px;
+  align-self: center;
+  line-height: 25px;
+  padding: 20px;
+  position: relative;
+}
+
+.sobre-conteudo p {
+  color: #7a7a7a;
+  /* color: #a1a1aa; */
+  font-size: 18px;
+}
+.sobre-conteudo span {
+  color: #fff;
+}
+.sobre-conteudo p:nth-child(2) {
+  padding: 15px 0;
+}
+.sobre-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-self: center;
+}
+.sobre-img img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 3px;
+  position: relative;
+  animation: sobreImgFlutuar 2s ease-in-out infinite alternate;
+}
+/* ANINAR A IMAGEM DE CONTATO */
+@keyframes sobreImgFlutuar {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+/* fim */
+.Soft-skills {
+  color: #fff;
+  padding: 30px 0;
+}
+.Soft-skills ul li {
+  border: 1px solid rgba(44, 216, 187, 0.2);
+}
+.Soft-skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.Soft-skills .fa-check {
+  color: #4c9f67;
+}
+
+/* ================================================== */
+@media (max-width: 768px) {
+  .sobre-bg {
+    padding: 20px;
+  }
+  .sobre-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .sobre-img img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-conteudo p {
+    font-size: 17px;
+  }
+  .sobre-img img {
+    display: none;
+  }
+  .Soft-skills ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,103 @@
+/* SEÇÃO HEADER MENU FIXO */
+.header-bg {
+  background: #000;
+  /* border-bottom: 1px solid rgb(97, 91, 91); */
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.logo a {
+  color: #fff;
+  font-size: 1.9rem;
+  border: 1px solid rgba(44, 216, 187, 0.2);
+  padding: 5px;
+}
+span {
+  color: #53ae70;
+}
+.header-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header-menu li a {
+  color: #fff;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.header-menu a {
+  padding: 15px 0;
+}
+
+/* TRAÇINHO ABAIXO DO MENU */
+.header-menu li a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  margin-top: 5px;
+  background: #53ae70;
+  transition: all.5s;
+  position: absolute;
+}
+.header-menu a:hover::after {
+  width: 100%;
+}
+/* DEIXANDO A TRACINO ATIVO DO MENU */
+.header-menu a.ativo::after {
+  width: 100%;
+}
+/* DEIXANDO O MENU ATIVO AO SCROLAR A PAGINA */
+.navigation ul {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  gap: 20px;
+  padding: 12px 7px;
+  top: 165px;
+  right: 1px;
+  z-index: 9999;
+  background: rgba(100, 109, 107, 0.2);
+  border-radius: 2px;
+}
+.navigation .fa-solid {
+  color: #53ae70;
+}
+.navigation .fa-solid:hover {
+  color: #fff;
+}
+.navigation a.actived {
+  color: #fff;
+}
+/* FIM MENU ATIVO AO SCROLAR A PAGINA */
+
+/* ======================================================================= */
+@media (max-width: 768px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .header {
+    display: none;
+  }
+  .navigation ul {
+    visibility: visible;
+  }
+}
+@media (max-width: 480px) {
+  /* .header{
+  display: none;
+  gap: 0px;
+  padding: 0px;
+  margin: 0 auto;
+} */
+}
