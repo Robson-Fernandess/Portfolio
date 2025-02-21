@@ -1,8 +1,19 @@
+html {
+  scroll-padding: 75px;
+}
+
 /* SEÇÃO HEADER MENU FIXO */
 .header-bg {
   background: #000;
-  /* border-bottom: 1px solid rgb(97, 91, 91); */
+  border-bottom: 1px solid rgb(97, 91, 91);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2025;
+  width: 100%;
 }
+
+/* ESTRUTURA DO HEADER */
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -11,15 +22,20 @@
   gap: 20px;
   padding: 20px;
 }
+
+/* LOGO */
 .logo a {
   color: #fff;
   font-size: 1.9rem;
   border: 1px solid rgba(44, 216, 187, 0.2);
   padding: 5px;
 }
+
 span {
   color: #53ae70;
 }
+
+/* MENU */
 .header-menu ul {
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +43,7 @@ span {
   justify-content: center;
   gap: 20px;
 }
+
 .header-menu li a {
   color: #fff;
   position: relative;
@@ -37,67 +54,126 @@ span {
   padding: 15px 0;
 }
 
-/* TRAÇINHO ABAIXO DO MENU */
+.header-menu i {
+  display: none;
+}
+
+/* TRAÇO ABAIXO DO MENU */
 .header-menu li a::after {
   content: "";
   display: block;
-  width: 0px;
+  width: 0;
   height: 2px;
   margin-top: 5px;
   background: #53ae70;
-  transition: all.5s;
+  transition: all 0.5s;
   position: absolute;
 }
+
 .header-menu a:hover::after {
   width: 100%;
 }
-/* DEIXANDO A TRACINO ATIVO DO MENU */
-.header-menu a.ativo::after {
+
+/* DEIXANDO O TRAÇO ATIVO DO MENU */
+.header-menu a.menu-ativo::after {
   width: 100%;
 }
-/* DEIXANDO O MENU ATIVO AO SCROLAR A PAGINA */
-.navigation ul {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-self: center;
-  gap: 20px;
-  padding: 12px 7px;
-  top: 165px;
-  right: 1px;
-  z-index: 9999;
-  background: rgba(100, 109, 107, 0.2);
-  border-radius: 2px;
-}
-.navigation .fa-solid {
-  color: #53ae70;
-}
-.navigation .fa-solid:hover {
-  color: #fff;
-}
-.navigation a.actived {
-  color: #fff;
-}
-/* FIM MENU ATIVO AO SCROLAR A PAGINA */
 
-/* ======================================================================= */
-@media (max-width: 768px) {
-  .logo {
-    margin: 0 auto;
-  }
-  .header {
-    display: none;
-  }
-  .navigation ul {
-    visibility: visible;
-  }
-}
-@media (max-width: 480px) {
-  /* .header{
+/* BOTÃO DE MENU MÓVEL */
+#btn-mobile {
   display: none;
-  gap: 0px;
-  padding: 0px;
-  margin: 0 auto;
-} */
+}
+
+/* RESPONSIVO DO SITE */
+@media (max-width: 768px) {
+  /* Ajustes no scroll */
+  html {
+    scroll-padding: 70px;
+  }
+
+  /* Logo */
+  .logo {
+    padding: 0 20px;
+  }
+
+  /* Botão de menu móvel */
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /* Menu */
+  .header-menu button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .header-menu ul {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    right: -175px;
+    top: 100px;
+  }
+  .header-menu.active ul {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    right: -75px;
+    top: 100px;
+    border: 1px solid rgba(44, 216, 187, 0.2);
+    background: rgba(86, 87, 87, 0.2);
+  }
+  .header-menu li {
+    display: flex;
+    align-items: center;
+    transition: 5s;
+  }
+  /* Links no menu */
+  .header .active ul li a {
+    opacity: 0;
+    padding: 15px;
+    margin-left: -40px;
+  }
+  /* Ícones no menu ativo */
+  .header-menu.active i {
+    display: block;
+    color: #fff;
+    transition: all 5s;
+  }
 }

@@ -7,13 +7,14 @@
   <title>Portfólio | Robson Fernandes - Desenvolvedor Front-End</title>
   <meta name="description" content="Desenvolvedor Front-End | Desenvolvedor Freelancer | Criação de sites web atraentes e responsivos | São Paulo, SP">
   <meta name="author" content="Robson Fernandes">
-  <!-- link font awesone -->
+  <!-- Link Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- link swiper -->
+  <!-- Link Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <!-- Link para o arquivo CSS -->
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <link rel="stylesheet" href="./css/style.min.css">
-  <!-- Add Favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 
@@ -22,154 +23,116 @@
   <div id="progress">
     <span id="progress-value"><i class="fa-solid fa-chevron-up"></i></i></span>
   </div>
+
   <!-- MENU DO SITE -->
   <header class="header-bg">
     <div class="header container">
       <div class="logo">
-        <a href="./index.html"></span> R F <span>DEV.</span> </span>
-        </a>
+        <a href="./index.html">R F <span>DEV.</span></a>
       </div>
-      <nav class="header-menu">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <!-- <li><a href="#experiencia">Experiencia</a></li> -->
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificados">Certificados</a></li>
-          <li><a href="#contato">Contato</a></li>
+      <nav id="nav" class="header-menu">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          Menu <span id="hamburger"></span>
+        </button>
+        <ul class="menu">
+          <li>
+            <i class="fa-solid fa-house"></i>
+            <a href="#inicio" class="js-link actived">Início</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-book"></i>
+            <a href="#sobre" class="js-link">Sobre Mim</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-laptop"></i>
+            <a href="#habilidades" class="js-link">Habilidades</a>
+          </li>
+          <li>
+            <!-- <i class="fa-solid fa-house-laptop"></i> -->
+            <i class="fa-solid fa-list-check"></i>
+            <a href="#projetos" class="js-link">Projetos</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="#certificados" class="js-link">Certificados</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-address-book"></i>
+            <a href="#contato" class="js-link">Contato</a>
+          </li>
         </ul>
       </nav>
     </div>
-  </header> <!-- FIM DO MENU -->
-  <!-- MENU LATERAL DEIXAR O MENU ATIVO-->
-  <section class="navigation">
-    <nav>
-      <ul>
-        <a href="#inicio" class="fa-solid fa-house actived js-link"></a>
-        <a href="#sobre" class="fa-solid fa-book js-link"></a>
-        <a href="#habilidades" class="fa-solid fa-house-laptop js-link"></a>
-        <a href="#projetos" class="fa-solid fa-laptop js-link"></a>
-        <a href="#certificados" class="fa-solid fa-graduation-cap js-link"></a>
-        <a href="#contato" class="fa-solid fa-address-book js-link"></a>
-      </ul>
-    </nav>
+  </header>
 
-  </section> <!-- FIM DO MENU ATIVO-->
-
-  <!-- SEÇÃO INTRODUCAO -->
-  <section class="introducao-bg section" id="inicio" aria-label="introducao">
+  <!-- SEÇÃO INTRODUÇÃO -->
+  <section class="introducao-bg js-section " id="inicio" aria-label="introducao">
     <div id="particles-js"></div>
-
-    <div class="introducao container">
+    <div class="introducao container js-animation">
       <div class="intro-info">
         <h1>Robson Fernandes</h1>
-        <p class=" typing-animation">Desenvolvedor Front-End</p>
+        <p class="typing-animation">Desenvolvedor Front-End</p>
         <ul class="redes-sociais">
-          <li><a href="https://www.linkedin.com/in/robson-fernandess/" target="_blank">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a></li>
-          <li><a href="https://github.com/Robson-Fernandess" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a></li>
-          <li><a href="mailto:contato.robson.dev@gmail.com" target="_blank">
-              <i class="fa-solid fa-envelope"></i>
-            </a></li>
+          <li><a href="https://www.linkedin.com/in/robson-fernandess/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/Robson-Fernandess" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="mailto:contato.robson.dev@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
-
       </div>
-      <!-- <div class="foto-intro">
-        <img src="./img/Rectangle 26.png" alt="Foto Perfil">
-      </div> -->
-
     </div>
-
-  </section> <!-- FIM SEÇÃO INTRODUCAO -->
+  </section>
 
   <!-- SEÇÃO SOBRE -->
-  <section class="sobre-bg section" id="sobre" aria-label="Sobre">
-    <div class="sobre-conteudo container hidden">
+  <section class="sobre-bg js-section" id="sobre" aria-label="Sobre">
+    <div class="sobre-conteudo container js-animation">
       <h2 class="subtitulo">Sobre Mim</h2>
       <div>
         <p>Meu nome é <span>Robson Fernandes</span> e sou apaixonado por tecnologia, o que me levou a seguir a carreira de programador. Acredito no poder da tecnologia para transformar ideias simples em ferramentas incríveis.</p>
         <p>Sou formado em <span> Análise e Desenvolvimento de Sistemas </span> e, nas horas vagas, estudo de forma incansável para ampliar meu conhecimento, sempre alinhado aos padrões de mercado.</p>
-        <!-- <p>Atualmente, estou em busca de uma oportunidade na área para aperfeiçoar minhas habilidades e adquirir experiência no campo.</p> -->
-        <p> Se você está buscando um parceiro para levar seu negócio online ao próximo nível, vamos conversar!</p>
-
-        <!-- <div class="Soft-skills">
-          <h2>Soft skills</h2>
-          <ul>
-            <li>
-              <i class="fa-solid fa-check"> </i> trabalho em equipe
-            </li>
-            <li>
-              <i class="fa-solid fa-check"> </i> Proatividae
-            </li>
-            <li>
-              <i class="fa-solid fa-check"> </i> Organização
-            </li>
-            <li>
-              <i class="fa-solid fa-check"> </i> Resolução de Problemas
-            </li>
-          </ul>
-        </div> -->
-
+        <p>Se você está buscando um parceiro para levar seu negócio online ao próximo nível, vamos conversar!</p>
       </div>
-      <div class="sobre-img">
+      <div class="sobre-img ">
         <img src="./img/sobre.png" alt="Foto Perfil">
       </div>
     </div>
-  </section> <!-- FIM SEÇÃO SOBRE -->
+  </section>
 
   <!-- SEÇÃO HABILIDADES -->
-  <section class="habilidades-bg section" id="habilidades" aria-label="Habilidades">
-    <div class="habilidades container hidden">
+  <section class="habilidades-bg js-section" id="habilidades" aria-label="Habilidades">
+    <div class="habilidades container js-animation">
       <h2 class="subtitulo">Habilidades</h2>
-      <div class="habilidades-conteudo">
+      <div class="habilidades-conteudo ">
         <h3>HTML, CSS e JavaScript</h3>
-        <p> <span>HTML,</span> <span>CSS</span> <span>e Javascript,</span> também conhecidas como santíssima trindade da web, formam o principal conjunto de tecnologias para qualquer aplicação web. Já deu para ver que é de suma importância entender MUITO bem esses caras.</p>
+        <p><span>HTML,</span> <span>CSS</span> <span>e Javascript,</span> também conhecidas como santíssima trindade da web, formam o principal conjunto de tecnologias para qualquer aplicação web.</p>
       </div>
       <ul class="habilidades-logo">
-        <li>
-          <i class="fa-brands fa-html5"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-css3-alt"></i>
-        </li>
-        <li>
-          <i class="fa-brands fa-js"></i>
-        </li>
+        <li><i class="fa-brands fa-html5"></i></li>
+        <li><i class="fa-brands fa-css3-alt"></i></li>
+        <li><i class="fa-brands fa-js"></i></li>
       </ul>
 
       <div class="habilidades-conteudo">
         <h3>Bootstrap</h3>
-        <p><span>Bootstrap</span> é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.</p>
+        <p><span>Bootstrap</span> é um framework front-end que facilita a criação de sites responsivos de forma rápida e simples.</p>
       </div>
       <ul class="habilidades-logo">
-        <li>
-          <i class="fa-brands fa-bootstrap"></i>
-        </li>
+        <li><i class="fa-brands fa-bootstrap"></i></li>
       </ul>
 
       <div class="habilidades-conteudo">
         <h3>Tailwind CSS</h3>
-        <p><span>Tailwind CSS</span> O Tailwind CSS é um framework CSS de código aberto que se destaca por sua abordagem única de design utilitário. Ele fornece uma série de classes utilitárias que podem ser diretamente aplicadas aos elementos HTML para estilizá-los, proporcionando uma abordagem única para a criação de designs personalizados e responsivos.</p>
+        <p><span>Tailwind CSS</span> é um framework CSS de código aberto, conhecido pela sua abordagem de design utilitário.</p>
       </div>
       <ul class="habilidades-logo">
-        <li>
-          <img src="./img/Habilidades/tailwind.svg" alt="">
-        </li>
+        <li><img src="./img/Habilidades/tailwind.svg" alt="Tailwind CSS"></li>
       </ul>
-
     </div>
-  </section> <!-- FIM  SEÇÃO HABILIDADES -->
-
+  </section>
   <!--INICIO SEÇÃO PROJETO -->
-  <section class="projeto-bg section" id="projetos" aria-label="Projeto">
-    <div class="projetos ">
+  <section class="projeto-bg js-section" id="projetos" aria-label="Projeto">
+    <div class="projetos js-animation ">
       <h2 class="subtitulo">Projetos</h2>
 
-      <div class="hidden"> <!-- 1 PROJETO -->
+      <div class="js-animation"> <!-- 1 PROJETO -->
         <div class="card">
           <h1 class="projeto-titulo">Projeto Bikcraft</h1>
           <img src="./img/Projetos/bikcraft.jpg" alt="Bikcraft">
@@ -205,7 +168,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden"> <!-- 2 PROJETO -->
+      <div class="js-animation"> <!-- 2 PROJETO -->
         <div class="card">
           <h1 class="projeto-titulo">Projeto Caravan</h1>
           <img src="./img/Projetos/caravan.png" alt="Caravan">
@@ -240,7 +203,7 @@
           </div>
         </div>
       </div>
-      <div class="hidden"> <!-- 3 PROJETO -->
+      <div class="js-animation"> <!-- 3 PROJETO -->
         <div class="card">
           <h1 class="projeto-titulo">Projeto Busca CEP</h1>
           <img src="./img/Projetos/buscacep.png" alt="Busca-Cep">
@@ -276,11 +239,11 @@
       </div>
 
     </div> <!-- FIM  CONTAINER -->
-  </section> <!-- FIM  SEÇÃO PROJETO -->
+  </section>
 
   <!-- SEÇÃO CERTIFICAÇÃO -->
-  <section class="certificados-bg section" id="certificados" aria-label="Certificado">
-    <div class="certificados-conteudo container">
+  <section class="certificados-bg js-section" id="certificados" aria-label="Certificado">
+    <div class="certificados-conteudo container js-animation">
       <h2 class="subtitulo">Certificados</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -409,11 +372,11 @@
       </div>
 
     </div>
-  </section> <!-- FIM  SEÇÃO CERTIFICAÇÃO -->
+  </section>
 
   <!-- SEÇÃO CONTATO -->
-  <section class="contato-bg section" id="contato" aria-label="Contato">
-    <div class="contato-conteudo container">
+  <section class="contato-bg js-section" id="contato" aria-label="Contato">
+    <div class="contato-conteudo container js-animation">
       <h2 class="subtitulo">Contato</h2>
 
       <!-- contato formulário -->
@@ -466,23 +429,23 @@
       </div>
 
     </div>
-  </section> <!-- FIM SEÇÃO CONTATO -->
+  </section>
 
   <!-- SEÇÃO FOOTER -->
   <footer class="footer-bg">
     <p class="footer-conteudo">
       © 2024 / Robson Fernandes / Todos os direitos reservados.</p>
-  </footer> <!-- FIM  SEÇÃO FOOTER -->
+  </footer>
 
   <!-- particles.js-->
   <script src="./js/particles.js"></script>
   <script src="./js/app.js"></script>
-  <!-- particles.js-->
+
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
-  <!-- swiper js -->
 
+  <!-- script js -->
   <script src="./js/script.js"></script>
 
 </body>

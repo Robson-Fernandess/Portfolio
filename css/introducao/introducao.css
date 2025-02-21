@@ -3,17 +3,17 @@
   background: #141414;
   background-image: url("/img/pattern.svg");
   padding: 0 20px;
-  height: calc(100vh - 5px);
+  height: calc(100vh);
 }
 .introducao {
+  height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   padding: 10px;
+  align-items: center;
 }
-.intro-info {
-  padding: 100px 0px;
-}
+
 .intro-info h1 {
   color: #f3f3f3;
   text-shadow: rgb(58, 65, 57) 0.1em 0.1em 0.2em;
@@ -94,6 +94,8 @@ li {
   margin-left: -20px;
 }
 /* FIM PARTICULA */
+
+/* RESPONSIVO DO SITE */
 @media (max-width: 1100px) {
   .introducao-bg {
     text-align: center;

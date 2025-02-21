@@ -1,14 +1,20 @@
+/* Reinicia os estilos padrão do navegador */
 @import "./reset/reset.css";
-
+/* Estilos globais do site */
 @import "./globall/global.css";
-
+/* Estilos para o menu do cabeçalho */
 @import "./header/header-menu.css";
+/* Estilos para a seção de introdução */
 @import "./introducao/introducao.css";
+/* Estilos para a seção sobre */
 @import "./sobre/sobre.css";
+/* Estilos para a seção de habilidades */
 @import "./habilidades/habilidades.css";
+/* Estilos para a seção de projetos */
 @import "./projetos/projeto.css";
+/* Estilos para a seção de certificados */
 @import "./certificado/certificado.css";
+/* Estilos para a seção de contato */
 @import "./contato/contato.css";
-@import "./footer/footer.css";
+/* Estilos para animações */
 @import "./animacoes/aninacao.css";
-

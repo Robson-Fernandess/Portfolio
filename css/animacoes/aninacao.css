@@ -1,11 +1,11 @@
 /* Aninação na pagina  */
-.hidden {
+.js-animation {
   opacity: 0;
   filter: blur(20px);
   transition: all 2s;
   transform: translateX(-100%);
 }
-.show {
+.js-animation.show {
   opacity: 1;
   filter: blur(0px);
   transition: all 2s;
@@ -13,13 +13,24 @@
 }
 
 /* aninaçao da orden dos projetos na pagina  */
-.hidden:nth-child(2) {
+.js-animation:nth-child(2) {
   transition-delay: 0ms;
 }
-.hidden:nth-child(3) {
+.js-animation:nth-child(3) {
   transition-delay: 1500ms;
 }
-.hidden:nth-child(4) {
+.js-animation:nth-child(4) {
   transition-delay: 2500ms;
 }
 /*fim aninação na pagina  */
+@media (max-width: 768px) {
+  .js-animation:nth-child(2) {
+    transition-delay: 0ms;
+  }
+  .js-animation:nth-child(3) {
+    transition-delay: 150ms;
+  }
+  .js-animation:nth-child(4) {
+    transition-delay: 300ms;
+  }
+}
