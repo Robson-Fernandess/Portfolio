@@ -16,5 +16,7 @@
 @import "./certificado/certificado.css";
 /* Estilos para a seção de contato */
 @import "./contato/contato.css";
+/* Estilos para footer */
+@import "./footer/footer.css";
 /* Estilos para animações */
 @import "./animacoes/aninacao.css";
